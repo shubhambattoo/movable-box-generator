@@ -1,0 +1,11 @@
+<div
+  class="box"
+  [ngClass]="{ selected: isSelected }"
+  (click)="handleClick()"
+  [ngStyle]="styleExp"
+  id="shape-{{ box.id }}"
+>
+  <div class="id">
+    {{ box.id }}
+  </div>
+</div>

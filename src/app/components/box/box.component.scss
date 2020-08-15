@@ -1,0 +1,18 @@
+.box {
+  width: 120px;
+  height: 120px;
+  margin: 6px;
+  background-color: rgb(126, 126, 126);
+  display: grid;
+  place-items: center;
+
+  .id {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  &.selected {
+    background-color: pink;
+  }
+}

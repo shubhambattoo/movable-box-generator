@@ -1,0 +1,20 @@
+<div class="actions">
+  <button id="add" (click)="handleAddBox()">
+    Add Box
+  </button>
+
+  <button id="toggle" (click)="handleToggle()">
+    Keyboard : {{ toggle ? "On" : "Off" }}
+  </button>
+</div>
+
+<div class="box-container">
+  <ng-container *ngFor="let item of boxes; trackBy: trackById">
+    <box
+      [box]="item"
+      (tapped)="handleSelect($event)"
+      [isSelected]="item.isSelected"
+      [status]="toggle"
+    ></box>
+  </ng-container>
+</div>
