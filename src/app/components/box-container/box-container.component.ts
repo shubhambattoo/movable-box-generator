@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import Box from "./../../models/Box";
-import KeyBoardToggle from './../../models/Toggle';
+import KeyBoardToggle from "./../../models/Toggle";
 
 @Component({
   selector: "box-container",
@@ -9,13 +9,7 @@ import KeyBoardToggle from './../../models/Toggle';
 })
 export class BoxContainerComponent implements OnInit {
   toggle = KeyBoardToggle.Off;
-  boxes: Box[] = [
-    {
-      id: 1,
-      isSelected: false,
-      isDisabled : false
-    },
-  ];
+  boxes: Box[] = [];
   constructor() {}
 
   ngOnInit(): void {}

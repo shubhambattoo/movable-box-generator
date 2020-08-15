@@ -45,19 +45,23 @@ export class BoxComponent implements OnInit {
           );
           elem.style.position = "absolute";
           switch (ev.which) {
-            case 37: // left
+            case 37:
+            case 65: // left
               elem.style.left =
                 parseInt(elem.style.left, 10) - this.defaultMoveAmount + "px";
               break;
-            case 38: // top
+            case 38:
+            case 87: // top
               elem.style.top =
                 parseInt(elem.style.top, 10) - this.defaultMoveAmount + "px";
               break;
-            case 39: // right
+            case 39:
+            case 68: // right
               elem.style.left =
                 parseInt(elem.style.left, 10) + this.defaultMoveAmount + "px";
               break;
-            case 40: // bottom
+            case 40:
+            case 83: // bottom
               elem.style.top =
                 parseInt(elem.style.top, 10) + this.defaultMoveAmount + "px";
               break;
